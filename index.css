@@ -44,6 +44,7 @@ html, body, #workspace, #blocklyDiv{ padding: 0; margin: 0; height: 100%; width:
 	text-decoration: none;
 	font-family: 'Heebo', Arial, Helvetica, sans-serif;
 	margin-bottom: 5px;
+	margin-left: 25px;
 }
 
 #menu {
