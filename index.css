@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;900&display=swap');
+
 #button {
   background-color: #4CAF50;
 	border: none;
@@ -34,8 +36,9 @@ html, body, #workspace, #blocklyDiv{ padding: 0; margin: 0; height: 100%; width:
 	height: 45px;
 	display: inline-block;
 	margin-left: 25px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	text-decoration: none;
+	font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
 
 #menu {
