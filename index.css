@@ -40,6 +40,12 @@ html, body, #workspace, #blocklyDiv{ padding: 0; margin: 0; height: 100%; width:
 	margin-top: 5px;
 }
 
+.langTutText {
+	text-decoration: none;
+	font-family: 'Heebo', Arial, Helvetica, sans-serif;
+	margin-bottom: 5px;
+}
+
 #menu {
 	height: 48px;
 }
