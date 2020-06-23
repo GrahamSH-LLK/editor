@@ -11,6 +11,7 @@
 	display: inline-block;
 	font-size: 16px;
 	text-align: center;
+	font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
 
 #button:hover { background-color: #3d9c40; }
@@ -36,9 +37,6 @@ html, body, #workspace, #blocklyDiv{ padding: 0; margin: 0; height: 100%; width:
 	height: 45px;
 	display: inline-block;
 	margin-left: 25px;
-	margin-bottom: 10px;
-	text-decoration: none;
-	font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
 
 #menu {
