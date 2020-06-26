@@ -119,12 +119,4 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     "style": "colour_blocks",
     "tooltip": "%{BKY_COLOUR_BLEND_TOOLTIP}"
   }
-      }
-
-    repeatWhile (args, util) {
-        const condition = Cast.toBoolean(args.CONDITION);
-        // If the condition is true (repeat WHILE), start the branch.
-        if (condition) {
-            util.startBranch(1, true);
-        }
 ]);  // END JSON EXTRACT (Do not delete this comment.)
