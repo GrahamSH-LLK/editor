@@ -49,6 +49,19 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     ]
   },
   {
+    "type": "hello_world",
+    "message0": "%{BKY_TEXT_HELLO_WORLD}",
+    "args0": [],
+    "output": "String",
+    "style": "text_blocks",
+    "helpUrl": "%{BKY_TEXT_TEXT_HELPURL}",
+    "tooltip": "%{BKY_TEXT_TEXT_TOOLTIP}",
+    "extensions": [
+      "text_quotes",
+      "parent_tooltip_when_inline"
+    ]
+  },
+  {
     "type": "text_multiline",
     "message0": "%1 %2",
     "args0": [{
