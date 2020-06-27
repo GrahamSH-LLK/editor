@@ -53,7 +53,7 @@ Blockly.Msg.COLOUR_HUE = '20';
 Blockly.Msg.VARIABLES_HUE = '330';
 /** @type {string} */
 /// {{Notranslate}} Hue value for all variable dynamic blocks.
-Blockly.Msg.VARIABLES_DYNAMIC_HUE = '310';
+Blockly.Msg.VARIABLES_DYNAMIC_HUE = '100';
 /** @type {string} */
 /// {{Notranslate}} Hue value for all procedure blocks.
 Blockly.Msg.PROCEDURES_HUE = '290';
