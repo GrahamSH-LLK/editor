@@ -27,7 +27,7 @@
 			<div class="mask"><div class="popup"><h1>New Variable</h1></div></div>-->
 		</div>
 		<xml id="toolbox" style="display: none">
-			<category name="Colour">
+			<category name="Colours">
 				<block type="colour_picker"></block> // Picks the color
 				<block type="colour_random"></block>
 				<block type="colour_rgb"></block>
@@ -45,7 +45,7 @@
 				<block type="lists_sort"></block>
 				<block type="lists_reverse"></block>
 			</category>
-			<category name="Logic">
+			<category name="">
 				<block type="controls_if"></block>
 				<block type="logic_operation"></block>
 				<block type="logic_compare"></block>
@@ -54,14 +54,14 @@
 				<block type="logic_null"></block>
 				<block type="logic_ternary"></block>
 			</category>
-			<category name="Control">
+			<category name="Controls">
 				<block type="controls_repeat_ext"></block>
 				<block type="controls_whileUntil"></block>
 				<block type="controls_for"></block>
 				<block type="controls_forEach"></block>
 				<block type="controls_flow_statements"></block>
 			</category>
-			<category name="Math">
+			<category name="Maths">
 				<block type="math_number"></block>
 				<block type="math_arithmetic"></block>
 				<block type="math_single"></block>
@@ -95,6 +95,11 @@
 			</category>
 			<category name="Variables" custom="VARIABLE"></category>
 			</category>
+
+</category>
+			<category name="Motion"></category>
+			</category>
+
 		</xml>
 		<script>
                         var workspace = Blockly.inject('blocklyDiv',
