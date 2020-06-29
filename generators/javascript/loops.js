@@ -14,6 +14,13 @@ goog.provide('Blockly.JavaScript.loops');
 
 goog.require('Blockly.JavaScript');
 
+Blockly.JavaScript['forever'] = function(block) {
+  var statements_forever = Blockly.JavaScript.statementToCode(block, 'Forever');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
 
 Blockly.JavaScript['controls_repeat_ext'] = function(block) {
   // Repeat n times.
