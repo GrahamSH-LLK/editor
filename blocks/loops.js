@@ -35,6 +35,21 @@ Blockly.Constants.Loops.HUE = 120;
 
 Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
   // Block for repeat n times (external number).
+
+{
+  "type": "forever",
+  "message0": "Forever %1",
+  "args0": [
+    {
+      "type": "input_statement",
+      "name": "Forever"
+    }
+  ],
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+}
+
   {
     "type": "controls_repeat_ext",
     "message0": "%{BKY_CONTROLS_REPEAT_TITLE}",
