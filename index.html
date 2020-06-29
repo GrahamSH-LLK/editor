@@ -33,13 +33,13 @@
 			<div class="mask"><div class="popup"><h1>New Variable</h1></div></div>-->
 		</div>
 		<xml id="toolbox" style="display: none">
-			<category name="Colours" colour="78">
+			<category name="Colours">
 				<block type="colour_picker"></block> // Picks the color
 				<block type="colour_random"></block>
 				<block type="colour_rgb"></block>
 				<block type="colour_blend"></block>
 			</category>
-			<category name="Lists" colour="46">
+			<category name="Lists">
 				<block type="lists_create_empty"></block>
 				<block type="lists_create_with"></block>
 				<block type="lists_repeat"></block>
@@ -51,7 +51,7 @@
 				<block type="lists_sort"></block>
 				<block type="lists_reverse"></block>
 			</category>
-			<category name="Logic" colour="34">
+			<category name="Logic">
 				<block type="controls_if"></block>
 				<block type="logic_operation"></block>
 				<block type="logic_compare"></block>
@@ -60,7 +60,7 @@
 				<block type="logic_null"></block>
 				<block type="logic_ternary"></block>
 			</category>
-			<category name="Controls" colour="80">
+			<category name="Controls">
 				<block type="controls_repeat_ext"></block>
 				<block type="controls_whileUntil"></block>
 				<block type="controls_for"></block>
@@ -68,7 +68,7 @@
 				<block type="controls_flow_statements"></block>
                                 
 			</category>
-			<category name="Maths" colour="120">
+			<category name="Maths">
 				<block type="math_number"></block>
 				<block type="math_arithmetic"></block>
 				<block type="math_single"></block>
@@ -83,7 +83,7 @@
 				<block type="math_random_float"></block>
 				<block type="math_atan2"></block>
 			</category>
-			<category name="Text" colour="76">
+			<category name="Text">
 				<block type="text"></block>
 				<block type="text_multiline"></block>
 				<block type="text_join"></block>
@@ -102,13 +102,6 @@
 			</category>
 			<category name="Variables" custom="VARIABLE"></category>
 			</category>
-
- </category>
-  <category name="Sounds" colour="20">
-    <block type="play_sound" />
-  </category>
-</xml>
-
 		</xml>
 		<script>
                         var workspace = Blockly.inject('blocklyDiv',
