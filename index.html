@@ -103,38 +103,39 @@
 			<category name="Variables" custom="VARIABLE"></category>
 			</category>
 		</xml>
-		<script>
-                        var workspace = Blockly.inject('blocklyDiv',
-			{toolbox: document.getElementById('toolbox'),
-			grid: {
-				spacing: 20,
-				length: 3,
-				colour: '#ccc'},
-			collapse: true,
-			sound: false
-			});
+		<script>var workspace = Blockly.inject('blocklyDiv', {
+  toolbox: document.getElementById('toolbox'),
+  grid: {
+    spacing: 20,
+    length: 3,
+    colour: '#ccc'
+  },
+  collapse: true,
+  sound: false
+});
 
 
-			function runCode() {
-				window.LoopTrap = 1000;
-				Blockly.JavaScript.INFINITE_LOOP_TRAP =
-					'if (--window.LoopTrap == 0) throw "Infinite loop.";\n';
-				var code = Blockly.JavaScript.workspaceToCode(workspace);
-				
-				Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
-				try {
-					eval(code);
-				} catch (e) {
-					alert(e);
-				}
-			}
-			
+function runCode() {
+  window.LoopTrap = 1000;
+  Blockly.JavaScript.INFINITE_LOOP_TRAP =
+    'if (--window.LoopTrap == 0) throw "Infinite loop.";\n';
+  var code = Blockly.JavaScript.workspaceToCode(workspace);
 
-				var xml = Blockly.Xml.workspaceToDom(workspace);
-                                var xml_text = Blockly.Xml.domToText(xml);
-				alert(xml_text);
-				console.log(xml_text);
-				function download(filename, text) {
+  Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+  try {
+    eval(code);
+  } catch (e) {
+    alert(e);
+  }
+}
+
+
+var xml = Blockly.Xml.workspaceToDom(workspace);
+var xml_text = Blockly.Xml.domToText(xml);
+alert(xml_text);
+console.log(xml_text);
+
+function download(filename, text) {
   var element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
   element.setAttribute('download', filename);
@@ -147,12 +148,12 @@
   document.body.removeChild(element);
 
 
-// Start file download.
-download("file.xml",xml_text);
-			}
-			
-			function loadCode() {
-				
+  // Start file download.
+  download("file.xml", xml_text);
+}
+
+function loadCode() {
+
   var file = e.target.files[0];
   if (!file) {
     return;
@@ -164,10 +165,10 @@ download("file.xml",xml_text);
   reader.readAsText(file);
 
 
-				var xml = Blockly.Xml.textToDom(xml_text);
-                                Blockly.Xml.domToWorkspace(xml, workspace);
-                                
-			}
+  var xml = Blockly.Xml.textToDom(xml_text);
+  Blockly.Xml.domToWorkspace(xml, workspace);
+
+}
 
 		</script>
 	</body>
