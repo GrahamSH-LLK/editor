@@ -152,7 +152,7 @@ download("file.xml",xml_text);
 			}
 			
 			function loadCode() {
-				function readSingleFile(e) {
+				
   var file = e.target.files[0];
   if (!file) {
     return;
@@ -162,7 +162,7 @@ download("file.xml",xml_text);
     var xml_text = e.target.result;
   };
   reader.readAsText(file);
-}
+
 
 				var xml = Blockly.Xml.textToDom(xml_text);
                                 Blockly.Xml.domToWorkspace(xml, workspace);
